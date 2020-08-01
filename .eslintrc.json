@@ -27,6 +27,13 @@
         "eqeqeq": "off",
         "no-use-before-define": "warn",
         "one-var": "off",
-        "no-console": "off"
+        "no-console": "off",
+        "no-trailing-spaces": "off",
+        "no-empty": "warn",
+        "prefer-const": "off",
+        "indent": "off",
+        "guard-for-in": "off",
+        "no-restricted-syntax": "off",
+        "max-len":"off"
     }
 }
