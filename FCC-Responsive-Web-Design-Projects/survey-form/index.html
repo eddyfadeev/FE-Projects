@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/FCC-Responsive-Web-Design-Projects/bootstrap/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="/resume-project-2.0/css/main.css"> -->
+    </head>
+    <body>
+        <div class="d-flex flex-column h-100">
+            <div class="container">
+                <header class="header">
+                    <h1 id="title" class="text-center">Survey Form</h1>
+                    <p id="description" class="text-center description">It's a survey form for the FreeCodeCamp's Certification</p>
+                    <p class="text-center">Thank you for your time!</p>                    
+                </header>
+                <div class="jumbotron">
+                    <form id="survey-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Age (optional)</label>
+                            <input type="number" class="form-control" min="1" max="100" id="number" placeholder="Enter your age">
+                        </div>
+                        <div class="form-group">
+                            <label for="dropdown">Which option best describes your current role?</label>
+                            <select id="dropdown" class="form-control">
+                                <option selected disabled>Select current role</option>
+                                <option>Student</option>
+                                <option>Full Time Job</option>
+                                <option>Full time Learner</option>
+                                <option>Prefer not to say</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <p>Do you like your job?</p>
+                        <div class="form-check">
+                            
+                            <input type="radio" name="do-you-like" id="definitely" value="definitely" class="form-check-input" checked>
+                            <label class="form-check-label mr-5" for="definitely">
+                                Definitely
+                            </label>
+
+                            <input type="radio" name="do-you-like" id="maybe" value="maybe" class="form-check-input">
+                            <label class="form-check-label mr-5" for="maybe">
+                                Maybe
+                            </label>
+
+                            <input type="radio" name="do-you-like" id="not-sure" value="not-sure" class="form-check-input">
+                            <label class="form-check-label mb-3" for="not-sure">
+                                Not sure
+                            </label>
+
+                        </div>
+                        <p >How do you rate this simple form?</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="checkbox1" value="1">
+                            <label class="form-check-label" for="checkbox1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="checkbox2" value="2">
+                            <label class="form-check-label" for="checkbox2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="checkbox3" value="3">
+                            <label class="form-check-label" for="checkbox3">3</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="checkbox4" value="4">
+                            <label class="form-check-label" for="checkbox4">4</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="checkbox1" value="5">
+                            <label class="form-check-label" for="checkbox5">5</label>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="comments-area">Write your comments, if you have any</label>
+                            <textarea class="form-control" name="comments-area" id="comments-area" rows="5"></textarea>
+                        </div>
+                        <button type="submit" id="submit" class="btn btn-success mb-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+    </body>
+</html>
