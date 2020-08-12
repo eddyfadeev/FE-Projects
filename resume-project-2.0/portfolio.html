@@ -52,64 +52,113 @@
         <!-- Main content -->
         <main class="flex-shrink-0" role="main" >
             <div class="container">
-                <div class="row" >
-                    <div class="col-lg-8 offset-lg-2 py-md-3">
-                        <h1 class="contact-custom-color font-weight-bold display-3">
-                            Skill-Set
-                        </h1>
-                        <hr class="border border-color mb-md-3">
-                        <div class="card-deck">
-                            <div class="card text-custom-color card-back svg-position">
-                                <img class="svg-size" src="img/svg/git.svg" alt="Git image">
-                                <div class="card-body">
-                                    <h5 class="text-center contact-custom-color">Git</h5>
-                                    <p class="card-text text-center">To keep track of work</p>
-                                </div>                                
-                            </div>
-                            <div class="card text-custom-color svg-position card-back">
-                                <img class="svg-size mt-1" src="img/svg/linux.svg" alt="Linux image">
-                                <div class="card-body">
-                                    <h5 class="text-center contact-custom-color mt-n1">Linux</h5>
-                                    <p class="card-text text-center">Nothing to say, just linux</p>
-                                </div>                                
-                            </div>
-                            <div class="card text-custom-color svg-position card-back">
-                                <img class="svg-size mt-1" src="img/svg/responsive-design.svg" alt="Responsive web design image">
-                                <div class="card-body">
-                                    <h5 class="text-center contact-custom-color">Responsiveness</h5>
-                                    <p class="card-text text-center">For web pages that look great on all devices</p>
-                                </div>                                
-                            </div>
-                        </div>
-                        <div class="card-deck mt-4 mb-5 pb-5">
-                            <div class="card text-custom-color svg-position card-back">
-                                <img class="svg-size" src="img/svg/html.svg" alt="HTML5 image">
-                                <div class="card-body">
-                                    <h5 class="text-center contact-custom-color">HTML5</h5>
-                                    <p class="card-text text-center">Semantic markup for structuring content</p>
-                                </div>                                
-                            </div>
-                            <div class="card text-custom-color svg-position card-back">
-                                <img class="svg-size" src="img/svg/css.svg" alt="CSS image">
-                                <div class="card-body">
-                                    <h5 class="text-center contact-custom-color">CSS</h5>
-                                    <p class="text-center card-text">Cascade style for pages to look great</p>
-                                </div>                                
-                            </div>
-                            <div class="card text-custom-color svg-position card-back">
-                                <img class="svg-size" src="img/svg/javascript.svg" alt="JavaScript image">
-                                <div class="card-body">
-                                    <h5 class="text-center contact-custom-color">JavaScript</h5>
-                                    <p class="text-center card-text">JavaScript language for awersome features</p>
-                                </div>                                
-                            </div>
-                        </div>
-                        
+                <h1 class="text-center contact-custom-color my-md-3">
+                    These are my projects made as a Front-End Developer
+                </h1>
+                <ul class="nav nav-tabs justify-content-md-around" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a 
+                      class="nav-link active" 
+                      id="portfolio-project" 
+                      data-toggle="tab" 
+                      href="#portfolio-project-tab" 
+                      role="tab" 
+                      aria-controls="portfolio-project" 
+                      aria-selected="true">Portfolio project</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a 
+                      class="nav-link" 
+                      id="landing-page" 
+                      data-toggle="tab" 
+                      href="#landing-page-tab" 
+                      role="tab" 
+                      aria-controls="landing-page" 
+                      aria-selected="false">Landing Page</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a 
+                      class="nav-link" 
+                      id="survey-form" 
+                      data-toggle="tab" 
+                      href="#survey-form-tab" 
+                      role="tab" 
+                      aria-controls="survey-form" 
+                      aria-selected="false">Survey Form</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a
+                        class="nav-link"
+                        id="documentation-page"
+                        data-toggle="tab" 
+                        href="#documentation-page-tab"
+                        aria-controls="documentation-page"
+                        aria-selected="false">Documentation Page</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a 
+                        href="#tribute-page-tab"
+                        class="nav-link"
+                        id="tibute-page"
+                        data-toggle="tab"
+                        aria-controls="tribute-page"
+                        aria-selected="false">Tribute Page</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content text-custom-color" id="myTabContent">
+                    <div class="tab-pane fade show active" id="portfolio-project-tab" role="tabpanel" aria-labelledby="portfolio-project-tab">
+                        <h2 class="text-center portfolio-page-heading">Portfolio Project</h2>
+                        <h3 class="text-center">
+                            It was supposed to be made as a part of FreeCodeCamp's Responsive Web Design Projects, 
+                            but then I decided to do it as a separate project.
+                        </h3>
+                        <h4 class="text-center">
+                            Uses HTML5, CSS3, Bootstrap and JavaScript under the hood
+                        </h4>
+                        <img src="img/portfolio-page.png" class="img-fluid mb-3 border border-success" alt="Portfolio Website screenshsot">
                     </div>
-                </div>
+                    <div class="tab-pane fade" id="landing-page-tab" role="tabpanel" aria-labelledby="landing-page-tab">
+                        <h2 class="text-center portfolio-page-heading">Landing Page</h2>
+                        <div class="text-center pb-2"><a class="btn btn-warning active" href="https://codepen.io/eddy_fadeev/full/dyMymMy" target="_blank">CodePen link</a></div>
+                        <h3 class="text-center">
+                            It was made as a part of FreeCodeCamp's Responsive Web Design Projects
+                        </h3>
+                        <h4 class="text-center">
+                            With HTML5, CSS3, Bootstrap under the hood
+                        </h4>
+                        <img src="img/landing-page.png" class="img-fluid mb-3 border border-success" alt="Landing Page screenshot">
+                    </div>
+                    <div class="tab-pane fade" id="survey-form-tab" role="tabpanel" aria-labelledby="survey-form-tab">
+                        <h2 class="text-center portfolio-page-heading">Survey Form</h2>
+                        <div class="text-center pb-2"><a class="btn btn-warning active" href="https://codepen.io/eddy_fadeev/full/LYNYjRW" target="_blank">CodePen link</a></div>
+                        <h3 class="text-center">
+                            It is a simple survey form made as a part of FreeCodeCamp's Responsive Web Design Projects
+                        </h3>
+                        <h4 class="text-center">Made with HTML5, CSS3, Bootstrap.</h4>
+                        <img src="img/survey-form.png" class="img-fluid mb-3 border border-success" alt="Surbey Form screenshot">
+                    </div>
+                    <div class="tab-pane fade" id="documentation-page-tab" role="tabpanel" aria-labelledby="documentation-page-tab">
+                        <h2 class="text-center portfolio-page-heading">Documentation Page</h2>
+                        <div class="text-center pb-2"><a class="btn btn-warning active" href="https://codepen.io/eddy_fadeev/full/XWdmyBE" target="_blank">CodePen link</a></div>
+                        <h3 class="text-center">
+                            It is a simple documentation page made as a part of FreeCodeCamp's Responsive Web Design Projects
+                        </h3>
+                        <h4 class="text-center">Made only with HTML5, CSS3</h4>
+                        <img src="img/documentation-page.png" class="img-fluid mb-3 border border-success" alt="Documentation Page screenshot">
+                    </div>
+                    <div class="tab-pane fade" id="tribute-page-tab" role="tabpanel" aria-labelledby="tribute-page-tab">
+                        <h2 class="text-center portfolio-page-heading">Tribute Page</h2>
+                        <div class="text-center pb-2"><a class="btn btn-warning active" href="https://codepen.io/eddy_fadeev/full/qBZOQvg" target="_blank">CodePen link</a></div>
+                        <h3 class="text-center">
+                            This is a tribute page to Nikola Tesla made as a part of FreeCodeCamp's Responsive Web Design Projects
+                        </h3>
+                        <h4 class="text-center">Made with HTML5, CSS3 and Bootstrap</h4>
+                        <img src="img/tribute-page.png" class="img-fluid mb-3 border border-success" alt="Tribute Page screenshot">
+                    </div>
+                  </div>
             </div>
         </main>
-        <footer class="footer mt-auto py-3 fixed-bottom navbotcolor">
+        <footer class="footer mt-auto py-3 navbotcolor" id="footer">
             <div class="container">
                 <p class="text-white text-center">Made with <span class="heart"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by Eduard Fadieiev</p>
             </div>
