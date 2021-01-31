@@ -94,7 +94,7 @@ a {
 
 .main-text {
     position: absolute;
-    left: 15%;
+    left: 40%;
     top: 50%;
     transform: translate(-15%, -50%);
     width: 500px;
@@ -149,26 +149,11 @@ a {
     transition: all ease 0.3s;
 }
 
-.model {
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    top: 50%;
-    right: 7%;
-    transform: translate(-7%, -50%);
-}
-
-.model img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
 .model-bg {
     position: absolute;
     right: 0px;
     top: 0px;
-    width: 45%;
+    width: 100%;
     height: 100%;
 }
 
@@ -344,6 +329,11 @@ a {
     color: #e4e4e4;
 }
 
+.portfolio-box img {
+    display: flex;
+    width: 100%;
+}
+
 #get-in-touch {
     width: 90%;
     height: 100px;
@@ -515,17 +505,8 @@ footer {
 }
 
 @media(max-width:1200px) {
-    .model-bg {
-        display: none;
-    }
-    .model {
-        height: 400px;
-        width: 400px;
-        right: 5%;
-        transform: translate(-5%, -50%);
-    }
     .main-text {
-        left: 10%;
+        left: 35%;
         transform: translate(-10%, -50%);
     }
 }
@@ -629,11 +610,8 @@ footer {
         height: 60px;
         background-color: #111111;
     }
-    .model {
-        display: none;
-    }
     .main-text {
-        left: 50%;
+        left: 55%;
         transform: translate(-50%, -50%);
     }
     #skills {
@@ -645,8 +623,8 @@ footer {
         width: 400px;
     }
     .skill-img {
-        width: 40%;
-        height: 300px;
+        width: 60%;
+        height: 100%;
     }
     .skill-img img {
         object-fit: cover;
@@ -658,6 +636,12 @@ footer {
     .portfolio-box-container {
         grid-template-rows: auto;
         grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:760px) {
+    .skill-img {
+        display: none;
     }
 }
 
@@ -676,6 +660,9 @@ footer {
     }
     .skill-heading h2 {
         font-size: 2.2rem;
+    }
+    .skill-img {
+        display: none;
     }
 }
 
@@ -709,6 +696,17 @@ footer {
     .copyright {
         font-size: 0.8rem;
     }
+}
+
+@media(max-width: 530px) {
+    .model-bg {
+        display: none;
+    }
+    .main-text {
+        left: 17%;
+        transform: translate(-10%, -50%);
+    }
+
 }
 
 @media(max-width:300px) {
