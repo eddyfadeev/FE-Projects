@@ -173,6 +173,18 @@ a {
     margin: auto auto 50px auto;
 }
 
+.http-text {
+    color: #89c891;
+}
+
+.css-text {
+    color: #ff4a57;
+}
+
+.js-text {
+    color: #f7df1e;
+}
+
 .skills-text-section {
     width: 400px;
 }
